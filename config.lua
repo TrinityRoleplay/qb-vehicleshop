@@ -87,7 +87,7 @@ Config.Shops = {
         },
     },
    ['luxury'] = {
-        ['Type'] = 'managed',  -- meaning a real player has to sell the car
+        ['Type'] = 'free-use',  -- meaning a real player has to sell the car "managed"
         ['Zone'] = {
             ['Shape'] = {
                 vector2(-1260.6973876953, -349.21334838867),
@@ -110,7 +110,7 @@ Config.Shops = {
             ['super'] = 'Super',
             ['sports'] = 'Sports'
         },
-        ['TestDriveTimeLimit'] = 0.5,
+        ['TestDriveTimeLimit'] = 3.0, 
         ['Location'] = vector3(-1255.6, -361.16, 36.91),
         ['ReturnLocation'] = vector3(-1231.46, -349.86, 37.33),
         ['VehicleSpawn'] = vector4(-1231.46, -349.86, 37.33, 26.61),
@@ -131,17 +131,17 @@ Config.Shops = {
                 chosenVehicle = 'nero',
             },
             [4] = {
-                coords = vector4(-1252.07, -364.2, 36.91, 56.44),
+                coords = vector4(-1252.07, -364.2, 36.91 - 1.0, 56.44),
                 defaultVehicle = 'bati',
                 chosenVehicle = 'bati',
             },
             [5] = {
-                coords = vector4(-1255.49, -365.91, 36.91, 55.63),
+                coords = vector4(-1255.49, -365.91, 36.91 - 1.0, 55.63),
                 defaultVehicle = 'carbonrs',
                 chosenVehicle = 'carbonrs',
             },
             [6] = {
-                coords = vector4(-1249.21, -362.97, 36.91, 53.24),
+                coords = vector4(-1249.21, -362.97, 36.91 - 1.0, 53.24),
                 defaultVehicle = 'hexer',
                 chosenVehicle = 'hexer',
             },
