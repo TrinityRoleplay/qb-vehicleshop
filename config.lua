@@ -3,9 +3,9 @@ Config.UsingTarget = false -- If you are using qb-target (uses entity zones to t
 Config.Commission = 0.10 -- Percent that goes to sales person from a full car sale 10%
 Config.FinanceCommission = 0.05 -- Percent that goes to sales person from a finance sale 5%
 Config.FinanceZone = vector3(-29.53, -1103.67, 26.42) -- Where the finance menu is located
-Config.PaymentWarning = 10 -- time in minutes that player has to make payment before repo
-Config.PaymentInterval = 24 -- time in hours between payment being due
-Config.MinimumDown = 10 -- minimum percentage allowed down
+Config.PaymentWarning = 48 -- time in minutes that player has to make payment before repo
+Config.PaymentInterval = 96 -- time in hours between payment being due
+Config.MinimumDown = 5 -- minimum percentage allowed down
 Config.MaximumPayments = 24 -- maximum payments allowed
 Config.Shops = {
     ['pdm'] = {
@@ -39,7 +39,7 @@ Config.Shops = {
             ['vans'] = 'Vans',
             ['cycles'] = 'Bicycles'
         },
-        ['TestDriveTimeLimit'] = 0.5, -- Time in minutes until the vehicle gets deleted
+        ['TestDriveTimeLimit'] = 3.0, -- Time in minutes until the vehicle gets deleted
         ['Location'] = vector3(-45.67, -1098.34, 26.42), -- Blip Location
         ['ReturnLocation'] = vector3(-44.74, -1082.58, 26.68), -- Location to return vehicle, only enables if the vehicleshop has a job owned
         ['VehicleSpawn'] = vector4(-56.79, -1109.85, 26.43, 71.5), -- Spawn location when vehicle is bought
@@ -87,7 +87,7 @@ Config.Shops = {
         },
     },
    ['luxury'] = {
-        ['Type'] = 'managed',  -- meaning a real player has to sell the car
+        ['Type'] = 'free-use',  -- meaning a real player has to sell the car
         ['Zone'] = {
             ['Shape'] = {
                 vector2(-1260.6973876953, -349.21334838867),
@@ -110,7 +110,7 @@ Config.Shops = {
             ['super'] = 'Super',
             ['sports'] = 'Sports'
         },
-        ['TestDriveTimeLimit'] = 0.5,
+        ['TestDriveTimeLimit'] = 3.0,
         ['Location'] = vector3(-1255.6, -361.16, 36.91),
         ['ReturnLocation'] = vector3(-1231.46, -349.86, 37.33),
         ['VehicleSpawn'] = vector4(-1231.46, -349.86, 37.33, 26.61),
@@ -131,17 +131,17 @@ Config.Shops = {
                 chosenVehicle = 'nero',
             },
             [4] = {
-                coords = vector4(-1252.07, -364.2, 36.91, 56.44),
+                coords = vector4(-1252.07, -364.2, 36.91 - 1.0, 56.44),
                 defaultVehicle = 'bati',
                 chosenVehicle = 'bati',
             },
             [5] = {
-                coords = vector4(-1255.49, -365.91, 36.91, 55.63),
+                coords = vector4(-1255.49, -365.91, 36.91 - 1.0, 55.63),
                 defaultVehicle = 'carbonrs',
                 chosenVehicle = 'carbonrs',
             },
             [6] = {
-                coords = vector4(-1249.21, -362.97, 36.91, 53.24),
+                coords = vector4(-1249.21, -362.97, 36.91 - 1.0, 53.24),
                 defaultVehicle = 'hexer',
                 chosenVehicle = 'hexer',
             },
